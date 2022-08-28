@@ -1,0 +1,16 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Jupyter Book
+    chapters:
+    - file: book/1.overview
+    - file: book/2.template
+    - file: book/3.build
+    - file: book/4.config
+    - file: book/5.myst
+    - file: book/6.images
+    - file: book/7.references
+    - file: book/8.publish

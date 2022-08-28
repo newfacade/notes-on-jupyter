@@ -1,0 +1,610 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>配置项和目录 &#8212; My sample book</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="MyST Markdown" href="5.myst.html" />
+    <link rel="prev" title="Build your book" href="3.build.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">My sample book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Notes on Jupyter
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Jupyter Book
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="1.overview.html">
+   概述
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2.template.html">
+   样书
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.build.html">
+   Build your book
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   配置项和目录
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5.myst.html">
+   MyST Markdown
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6.images.html">
+   图片
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="7.references.html">
+   References and Citations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8.publish.html">
+   发布到网上
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/book/4.config.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fbook/4.config.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/book/4.config.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   配置项
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#book-settings">
+     Book settings
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#execution-settings">
+     Execution settings
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#html-specific-settings">
+     HTML-specific settings
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#citations-and-bibliographies">
+     Citations and bibliographies
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   目录
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>配置项和目录</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   配置项
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#book-settings">
+     Book settings
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#execution-settings">
+     Execution settings
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#html-specific-settings">
+     HTML-specific settings
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#citations-and-bibliographies">
+     Citations and bibliographies
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   目录
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
+<h1>配置项和目录<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>之前我们通过样书简单介绍了配置项（_config.yml）和目录（_toc.yml），这节我们来更详细地介绍它们。</p>
+</div>
+<div class="section" id="id2">
+<h2>配置项<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<p>下面大部分都是 Configuration defaults</p>
+<div class="section" id="book-settings">
+<h3>Book settings<a class="headerlink" href="#book-settings" title="Permalink to this headline">#</a></h3>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># The title of the book. Will be placed in the left navbar.</span>
+<span class="nt">title                       </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">My Jupyter Book</span>
+
+<span class="c1"># The author of the book</span>
+<span class="nt">author                      </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">The Jupyter Book community</span>
+
+<span class="c1"># Copyright year to be placed in the footer</span>
+<span class="nt">copyright                   </span><span class="p">:</span> <span class="s">&quot;2022&quot;</span>
+
+<span class="c1"># A path to the book logo</span>
+<span class="nt">logo                        </span><span class="p">:</span> <span class="s">&quot;&quot;</span>
+
+<span class="c1"># Patterns to skip when building the book. Can be glob-style (e.g. &quot;*skip.ipynb&quot;)</span>
+<span class="nt">exclude_patterns            </span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">_build</span><span class="p p-Indicator">,</span> <span class="nv">Thumbs.db</span><span class="p p-Indicator">,</span> <span class="nv">.DS_Store</span><span class="p p-Indicator">,</span> <span class="s">&quot;**.ipynb_checkpoints&quot;</span><span class="p p-Indicator">]</span>
+
+<span class="c1"># Auto-exclude files not in the toc</span>
+<span class="nt">only_build_toc_files        </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="execution-settings">
+<h3>Execution settings<a class="headerlink" href="#execution-settings" title="Permalink to this headline">#</a></h3>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">execute</span><span class="p">:</span>
+  <span class="c1"># Whether to execute notebooks at build time. </span>
+  <span class="c1"># Must be one of (&quot;auto&quot;, &quot;force&quot;, &quot;cache&quot;, &quot;off&quot;)</span>
+  <span class="nt">execute_notebooks         </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">auto</span>
+  
+  <span class="c1"># The maximum time (in seconds) each notebook cell is allowed to run.</span>
+  <span class="nt">timeout                   </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">30</span>
+  
+  <span class="c1"># If `False`, when a code cell raises an error the execution is stopped.</span>
+  <span class="nt">allow_errors              </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="html-specific-settings">
+<h3>HTML-specific settings<a class="headerlink" href="#html-specific-settings" title="Permalink to this headline">#</a></h3>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">html</span><span class="p">:</span>
+  <span class="nt">favicon                   </span><span class="p">:</span> <span class="s">&quot;&quot;</span>  <span class="c1"># A path to a favicon image</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="citations-and-bibliographies">
+<h3>Citations and bibliographies<a class="headerlink" href="#citations-and-bibliographies" title="Permalink to this headline">#</a></h3>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">bibtex_bibfiles</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">references.bib</span>  <span class="c1"># A path to bibtex file</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>目录<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
+<p>可以按 part-chapter-section 组织，就像（<code class="docutils literal notranslate"><span class="pre">注意格式</span></code>）：</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">format</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">jb-book</span>
+<span class="nt">root</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">index</span>
+<span class="nt">parts</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">caption</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Name of Part 1</span>
+    <span class="nt">chapters</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">file</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">path/to/part1/chapter1</span>
+    <span class="p p-Indicator">-</span> <span class="nt">file</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">path/to/part1/chapter2</span>
+      <span class="nt">sections</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">file</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">path/to/part1/chapter2/section1</span>
+  <span class="p p-Indicator">-</span> <span class="nt">caption</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Name of Part 2</span>
+    <span class="nt">chapters</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">file</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">path/to/part2/chapter1</span>
+    <span class="p p-Indicator">-</span> <span class="nt">file</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">path/to/part2/chapter2</span>
+      <span class="nt">sections</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">file</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">path/to/part2/chapter2/section1</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./book"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="3.build.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Build your book</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="5.myst.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">MyST Markdown</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Jupyter Book Community<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
