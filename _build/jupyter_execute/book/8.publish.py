@@ -19,13 +19,16 @@
 # git clone https://github.com/<user>/<my-repository-name>
 # ```
 # 
-# 3.Copy all of your book files and folders into this newly cloned repository:
+# 3.使用样书初始化，这样很方便
 # 
 # ```
-# cp -r mybookname/* myonlinebook/
+# cp -r sample-book/* myonlinebook/
 # ```
 # 
-# 4.同步 local and remote repositories:
+# 4.在 `myonlinebook/` 里 Create your book's content 和 Build your book.
+# 
+# 
+# 5.同步 local and remote repositories:
 # 
 # ```
 # cd myonlinebook
@@ -36,7 +39,7 @@
 
 # ## 发布到网上
 # 
-# We have just pushed the `source files` for our book into our GitHub repository. This makes it publicly accessible for you or others to see.
+# We have just pushed the source files for our book into our GitHub repository. This makes it publicly accessible for you or others to see.
 # 
 # 将书发布到 Github 需要借助工具 `ghp-import`，可以通过如下命令安装：
 # 

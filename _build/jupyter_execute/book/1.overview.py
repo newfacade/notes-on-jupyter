@@ -7,7 +7,7 @@
 # Jupyter Book is an open-source tool for building publication-quality books and documents from markdown files and Jupyter notebooks.
 # ```
 # 
-# 官网 https://jupyterbook.org/en/stable/intro.html
+# 官网 <https://jupyterbook.org/en/stable/intro.html>
 
 # ## 安装 Jupyter Book
 # 
