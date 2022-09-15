@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>发布到网上 &#8212; Jupyter 笔记</title>
+    <title>JupyterLab 概述 &#8212; Jupyter 笔记</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/github.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="References and Citations" href="7.references.html" />
+    <link rel="next" title="使用 Jupyter notebooks" href="2.notebook.html" />
+    <link rel="prev" title="Introduction" href="../intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -117,19 +118,19 @@ const thebe_selector_output = ".output, .cell_output"
   JupyterLab
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../lab/1.overview.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    JupyterLab 概述
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../lab/2.notebook.html">
+  <a class="reference internal" href="2.notebook.html">
    使用 Jupyter notebooks
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../lab/3.markdown.html">
+  <a class="reference internal" href="3.markdown.html">
    Markdown 语法
   </a>
  </li>
@@ -139,44 +140,44 @@ const thebe_selector_output = ".output, .cell_output"
   Jupyter Book
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="1.overview.html">
+  <a class="reference internal" href="../book/1.overview.html">
    Jupyter Book 概述
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="2.template.html">
+  <a class="reference internal" href="../book/2.template.html">
    样书
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="3.build.html">
+  <a class="reference internal" href="../book/3.build.html">
    Build your book
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="4.config.html">
+  <a class="reference internal" href="../book/4.config.html">
    配置项和目录
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="5.myst.html">
+  <a class="reference internal" href="../book/5.myst.html">
    MyST Markdown
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="6.images.html">
+  <a class="reference internal" href="../book/6.images.html">
    图片
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="7.references.html">
+  <a class="reference internal" href="../book/7.references.html">
    References and Citations
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../book/8.publish.html">
    发布到网上
   </a>
  </li>
@@ -239,7 +240,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/newfacade/notes-on-jupyter/master?urlpath=tree/book/8.publish.ipynb"
+        <a href="https://mybinder.org/v2/gh/newfacade/notes-on-jupyter/master?urlpath=tree/lab/1.overview.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -299,7 +300,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/newfacade/notes-on-jupyter/issues/new?title=Issue%20on%20page%20%2Fbook/8.publish.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/newfacade/notes-on-jupyter/issues/new?title=Issue%20on%20page%20%2Flab/1.overview.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -327,7 +328,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/book/8.publish.ipynb"
+        <a href="../_sources/lab/1.overview.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -387,13 +388,23 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#github">
-   创建 GitHub 仓库
+  <a class="reference internal nav-link" href="#id1">
+   JupyterLab 的功能
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   发布到网上
+   安装 JupyterLab
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   启动 JupyterLab
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter">
+   Jupyter 界面
   </a>
  </li>
 </ul>
@@ -405,7 +416,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>发布到网上</h1>
+                <h1>JupyterLab 概述</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -416,13 +427,23 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#github">
-   创建 GitHub 仓库
+  <a class="reference internal nav-link" href="#id1">
+   JupyterLab 的功能
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   发布到网上
+   安装 JupyterLab
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   启动 JupyterLab
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter">
+   Jupyter 界面
   </a>
  </li>
 </ul>
@@ -435,45 +456,69 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>发布到网上<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="jupyterlab">
+<h1>JupyterLab 概述<a class="headerlink" href="#jupyterlab" title="Permalink to this headline">#</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Once you’ve built the HTML for your book, you can host it online. In this tutorial, we’ll cover how to publish your book online with GitHub Pages.</p>
+<p>JupyterLab is the next-generation web-based user interface for Project Jupyter.<br/>
+JupyterLab enables you to work with documents and activities such as Jupyter notebooks, text editors, and terminals in a flexible, integrated, and extensible manner.</p>
 </div>
-<div class="section" id="github">
-<h2>创建 GitHub 仓库<a class="headerlink" href="#github" title="Permalink to this headline">#</a></h2>
-<p>In order to connect your hosted book with your book’s source content, you should put your book’s source content in a public repository.</p>
-<p>1.在 <a class="reference external" href="https://github.com/new">https://github.com/new</a> 创建一个新的 repository,<code class="docutils literal notranslate"> <span class="pre">Make</span> <span class="pre">your</span> <span class="pre">repository</span> <span class="pre">public</span> <span class="pre">and</span> <span class="pre">do</span> <span class="pre">not</span> <span class="pre">initialize</span> <span class="pre">it</span> <span class="pre">with</span> <span class="pre">a</span> <span class="pre">README</span> <span class="pre">file</span></code>.</p>
-<p>2.Clone the (currently empty) online repository to a location on your local computer:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/&lt;</span><span class="n">user</span><span class="o">&gt;/&lt;</span><span class="n">my</span><span class="o">-</span><span class="n">repository</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-<p>3.使用样书初始化，这样很方便</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cp</span> <span class="o">-</span><span class="n">r</span> <span class="n">sample</span><span class="o">-</span><span class="n">book</span><span class="o">/*</span> <span class="n">myonlinebook</span><span class="o">/</span>
-</pre></div>
-</div>
-<p>4.在 <code class="docutils literal notranslate"><span class="pre">myonlinebook/</span></code> 里 Create your book’s content 和 Build your book.</p>
-<p>5.同步 local and remote repositories:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">myonlinebook</span>
-<span class="n">git</span> <span class="n">add</span> <span class="o">./*</span>
-<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;adding my first book!&quot;</span>
-<span class="n">git</span> <span class="n">push</span>
-</pre></div>
-</div>
+<p>官网：<a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/">https://jupyterlab.readthedocs.io/en/stable/</a></p>
+<div class="section" id="id1">
+<h2>JupyterLab 的功能<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Jupyter notebooks (.ipynb files) are fully supported in JupyterLab（核心功能）.</p></li>
+<li><p>Use Code consoles.</p></li>
+<li><p>Use Terminals.</p></li>
+<li><p>Multiple views of documents with different editors or viewers（分屏）.</p></li>
+<li><p>JupyterLab offers a unified model for viewing and handling data formats.</p></li>
+</ul>
+<p>那为什么要使用 JupyterLab 呢？Personally:</p>
+<ol class="simple">
+<li><p>确实很适合做数据科学。</p></li>
+<li><p>别人也在用 Jupyter notebooks（或者类似的 Google colab），比如说某些 GitHub 项目、很多 Coursera 课程的作业、《Dive into Deep Learning》每个页面都是一个 notebook、去 Kaggle 参加比赛需要自己写 notebook 等。</p></li>
+<li><p>用来写 Markdown 文档。</p></li>
+<li><p>用来写 Jupyter Book（我们将在第二部分做详细介绍）。</p></li>
+</ol>
 </div>
 <div class="section" id="id2">
-<h2>发布到网上<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
-<p>We have just pushed the source files for our book into our GitHub repository. This makes it publicly accessible for you or others to see.</p>
-<p>将书发布到 Github 需要借助工具 <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code>，可以通过如下命令安装：</p>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>pip install ghp-import
+<h2>安装 JupyterLab<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<p>通过 pip 安装：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">jupyterlab</span>
 </pre></div>
 </div>
-<p>然后在本地的 myonlinebook/ 文件夹下执行如下命令：</p>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>ghp-import -n -p -f _build/html
+<p>通过 conda 安装：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">jupyterlab</span>
 </pre></div>
 </div>
-<p>Typically after a few minutes your site should be viewable online at a url such as: <code class="docutils literal notranslate"><span class="pre">https://&lt;user&gt;.github.io/&lt;myonlinebook&gt;/</span></code>.</p>
+</div>
+<div class="section" id="id3">
+<h2>启动 JupyterLab<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
+<p>Once installed, launch JupyterLab with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span> <span class="n">lab</span>
+</pre></div>
+</div>
+<p>JupyterLab will open automatically in your browser（本地运行的 JupyterLab 的 url 一般是 <code class="docutils literal notranslate"><span class="pre">http://localhost:8888/lab</span></code>）:</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/lab1.jpg"><img alt="launch" class="bg-primary mb-1" src="../_images/lab1.jpg" style="width: 700px;" /></a>
+<p>You may also access JupyterLab by entering the notebook server’s URL into the browser:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">http</span><span class="p">(</span><span class="n">s</span><span class="p">):</span><span class="o">//&lt;</span><span class="n">server</span><span class="p">:</span><span class="n">port</span><span class="o">&gt;/&lt;</span><span class="n">lab</span><span class="o">-</span><span class="n">location</span><span class="o">&gt;/</span><span class="n">lab</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="jupyter">
+<h2>Jupyter 界面<a class="headerlink" href="#jupyter" title="Permalink to this headline">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>While JupyterLab has many features found in traditional IDEs, it remains focused on interactive, exploratory computing. The JupyterLab interface consists of a <code class="docutils literal notranslate"><span class="pre">main</span> <span class="pre">work</span> <span class="pre">area</span></code> containing tabs of documents and activities, a collapsible <code class="docutils literal notranslate"><span class="pre">left</span> <span class="pre">sidebar</span></code>, and a <code class="docutils literal notranslate"><span class="pre">menu</span> <span class="pre">bar</span></code>.</p>
+</div>
+<p>Left Sidebar 从上到下依次是:</p>
+<ul class="simple">
+<li><p>a file browser,</p></li>
+<li><p>a list of tabs in the main work and of running kernels and terminals,</p></li>
+<li><p>the table of contents,</p></li>
+<li><p>the extension manager.</p></li>
+</ul>
+<p>Menu Bar 和 Main Work Area functioning as you expected.</p>
 </div>
 </div>
 
@@ -490,7 +535,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./book"
+            path: "./lab"
         },
         predefinedOutput: true
     }
@@ -504,12 +549,19 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="7.references.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../intro.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">References and Citations</p>
+            <p class="prev-next-title">Introduction</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="2.notebook.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">使用 Jupyter notebooks</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
