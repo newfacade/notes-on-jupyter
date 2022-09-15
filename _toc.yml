@@ -4,6 +4,11 @@
 format: jb-book
 root: intro
 parts:
+  - caption: JupyterLab
+    chapters:
+    - file: lab/1.overview
+    - file: lab/2.notebook
+    - file: lab/3.markdown
   - caption: Jupyter Book
     chapters:
     - file: book/1.overview
